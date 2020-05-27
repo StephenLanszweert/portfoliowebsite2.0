@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stephen Lanszweert</title>
+        <link rel="stylesheet" href="./dist/css/main.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <main>
+            <!-- TODO: add hovers on navbuttons and cta button -->
+            <div class="brand">
+                <span class="head">S</span>tephen
+                <span class="head">L</span>anszweert
+            </div>
+            <nav id="myTopnav">
+                <a href="#">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="myFunction()"
+                >
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+            <section class="home-section">
+                <h1 class="rotatingText title">
+                    Hello, I'm an enthousiastic
+                    <div class="words">
+                        <span class="rotatingText-adjective"
+                            >Web<br />developer</span
+                        >
+                        <span class="rotatingText-adjective"
+                            >Web<br />designer</span
+                        >
+                        <span class="rotatingText-adjective"
+                            >frontend<br />developer</span
+                        >
+                    </div>
+                </h1>
+                <button class="btn">See my work</button>
+            </section>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+        </main>
+        <script>
+            function myFunction() {
+                var x = document.getElementById('myTopnav');
+                if (x.className === 'topnav') {
+                    x.className += ' responsive';
+                } else {
+                    x.className = 'topnav';
+                }
+            }
+        </script>
+    </body>
+</html>
